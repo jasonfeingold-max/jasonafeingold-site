@@ -115,10 +115,22 @@ footer a:focus-visible,
 h1 {
   margin: 18px 0 22px;
   font-family: var(--display);
-  font-size: clamp(4.1rem, 8.2vw, 7.6rem);
+  font-size: clamp(5rem, 10vw, 9rem);
   font-weight: 400;
   letter-spacing: -0.065em;
-  line-height: 0.86;
+  line-height: 0.9;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 .middle-initial {
+  margin-left: 1.55em;
+}
+
+h1 .surname {
+  margin-left: 2.05em;
 }
 
 .introduction {
@@ -153,12 +165,108 @@ h1 {
 }
 
 .work-section,
+.bibliography-section,
 .about-section {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 64px;
   padding-block: 96px;
   border-top: 1px solid var(--rule);
+}
+
+.bibliography {
+  min-width: 0;
+}
+
+.bibliography-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  align-items: end;
+  gap: 56px;
+  margin-bottom: 78px;
+}
+
+.bibliography-heading h2 {
+  margin-top: 0;
+}
+
+.bibliography-heading p,
+.pen-name-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--display);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.bibliography-group + .bibliography-group {
+  margin-top: 72px;
+}
+
+.bibliography-group h3 {
+  margin: 0 0 22px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.bibliography-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+}
+
+.bibliography-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 32px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.bibliography-list cite {
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-style: italic;
+  line-height: 1.12;
+}
+
+.bibliography-list p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.bibliography-list a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bibliography-list a:hover,
+.bibliography-list a:focus-visible {
+  color: var(--accent);
+}
+
+.pen-name-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.pen-name-heading p {
+  font-size: 0.98rem;
 }
 
 .section-label {
@@ -222,6 +330,113 @@ footer p {
   margin: 0;
 }
 
+.story-main {
+  width: min(900px, calc(100% - 48px));
+}
+
+.story {
+  padding-block: 96px 112px;
+}
+
+.story-masthead {
+  max-width: 760px;
+  margin: 0 auto 72px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.story-masthead h1 {
+  margin: 20px 0 22px;
+  font-size: clamp(4.2rem, 10vw, 7.4rem);
+  line-height: 0.94;
+}
+
+.story-byline {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.24rem;
+}
+
+.story-publication {
+  max-width: 620px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-family: var(--display);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.story-publication a {
+  display: inline-block;
+  margin-left: 0.25em;
+  color: var(--ink);
+  text-underline-offset: 0.2em;
+}
+
+.story-publication a:hover,
+.story-publication a:focus-visible {
+  color: var(--accent);
+}
+
+.story-body {
+  max-width: 760px;
+  margin-inline: auto;
+  font-family: var(--display);
+  font-size: clamp(1.16rem, 1.2vw + 0.82rem, 1.36rem);
+  line-height: 1.82;
+}
+
+.story-body p {
+  margin: 0;
+  text-indent: 1.65em;
+}
+
+.story-body p:first-child,
+.scene-break + p {
+  text-indent: 0;
+}
+
+.story-body p:first-child::first-letter {
+  float: left;
+  margin: 0.08em 0.09em 0 0;
+  color: var(--accent);
+  font-size: 3.45em;
+  line-height: 0.78;
+}
+
+.story-body cite {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.scene-break {
+  margin-block: 2.7em;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.32em;
+  text-align: center;
+}
+
+.story-end {
+  max-width: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 76px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid var(--rule);
+}
+
+.story-end > span {
+  color: var(--accent);
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 @media (max-width: 800px) {
   .site-header,
   main,
@@ -255,6 +470,7 @@ footer p {
   }
 
   .work-section,
+  .bibliography-section,
   .about-section {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -269,11 +485,52 @@ footer p {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .bibliography-heading {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 58px;
+  }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: clamp(3.5rem, 19vw, 5rem);
+    font-size: clamp(4rem, 21vw, 5.75rem);
+    line-height: 0.92;
+  }
+
+  h1 .middle-initial {
+    margin-left: 1.35em;
+  }
+
+  h1 .surname {
+    margin-left: 0.55em;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 0.66rem;
+  }
+
+  .bibliography-list li {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .bibliography-list a {
+    justify-self: start;
+  }
+
+  .pen-name-heading {
+    display: block;
+  }
+
+  .pen-name-heading p {
+    margin-bottom: 22px;
   }
 
   .typewriter-form {
@@ -286,6 +543,28 @@ footer p {
     flex-direction: column;
     justify-content: center;
     gap: 18px;
+  }
+
+  .story-main {
+    width: min(100% - 32px, 680px);
+  }
+
+  .story {
+    padding-block: 72px 84px;
+  }
+
+  .story-masthead {
+    margin-bottom: 52px;
+    padding-bottom: 40px;
+  }
+
+  .story-masthead h1 {
+    font-size: clamp(3.4rem, 17vw, 5rem);
+  }
+
+  .story-body {
+    font-size: 1.12rem;
+    line-height: 1.76;
   }
 }
 
