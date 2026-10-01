@@ -2,7 +2,7 @@
 
 ## Batch result
 
-The current local batch contains eleven reading pages. The importer compared each webpage with its source manuscript after excluding the cover page. Every page passed checks for:
+The current local batch contains twelve reading pages. The importer compared each webpage with its source manuscript after excluding the cover page. Every page passed checks for:
 
 - exact story text and paragraph sequence
 - italic runs
@@ -21,11 +21,13 @@ The current local batch contains eleven reading pages. The importer compared eac
 | Dream of the Taino Chief Dreaming | 3 | 0 | 0 | Pass |
 | Kool-Aid | 189 | 1 | 0 | Pass |
 | The Road to Hell | 93 | 7 | 0 | Pass |
+| Comparing Notes | 37 | 5 | 0 | Pass |
 
 ## Notes
 
 - `Little Carmen` was converted from its Word-compatible RTF source before import, then compared against the converted text and formatting.
 - `Dream of the Taino Chief Dreaming` contains three long body paragraphs in the source manuscript; the website preserves that structure rather than inventing paragraph breaks.
 - `The Daily Mail` uses the newer `v 3` manuscript. Jason should confirm that this is the preferred final version before publication.
-- No manuscript was located for `Comparing Notes` or `I Let Him Fuck You`, so neither has a local reading page yet.
+- `Comparing Notes` was imported on October 1, 2026 from Jason’s supplied DOCX, under its published title. Its cover-page contact details and rights information were excluded. Jason approved publication of the page on October 1, 2026.
+- No manuscript was located for `I Let Him Fuck You`, so it does not have a local reading page yet.
 
