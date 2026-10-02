@@ -27,7 +27,7 @@ This is Jason A. Feingold's author website. It presents his fiction, bibliograph
 - Bibliography includes Jason A. Feingold and Simon Easton sections.
 - Eleven story pages were published with the bibliography after Jason approved publication.
 - `Comparing Notes` has now been imported and linked locally as a twelfth reading page; Jason approved publication of this addition on October 1, 2026.
-- All twelve imported story pages pass the automatic comparison. See `STORY_IMPORT_REPORT.md`.
+- All fifteen imported story pages pass the automatic comparison. See `STORY_IMPORT_REPORT.md`.
 - The initial eleven-page batch is live; subsequent additions remain local until approved.
 
 ## Pre-launch decisions still needed
@@ -40,3 +40,11 @@ This is Jason A. Feingold's author website. It presents his fiction, bibliograph
 - Review one representative story page and the full bibliography locally.
 - Publish only after Jason gives explicit approval.
 
+
+## Latest local addition
+
+- `Ella Mar` imported from Jason’s supplied edited manuscript, linked under `100 Voices`, and automatically verified. Jason approved publication of this page and the anthology-credit correction on October 1, 2026.
+
+- `Blanden, I` imported, verified, and linked locally from `Good Works Review 2018`. Jason approved publication on October 1, 2026.
+
+- `Fast Food Fish Fatale` imported and verified locally from the supplied `Edit 1` manuscript; bibliography now links to the local reading page. Jason approved publication on October 1, 2026.

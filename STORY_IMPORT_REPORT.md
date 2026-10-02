@@ -2,7 +2,7 @@
 
 ## Batch result
 
-The current local batch contains twelve reading pages. The importer compared each webpage with its source manuscript after excluding the cover page. Every page passed checks for:
+The current local batch contains fifteen reading pages. The importer compared each webpage with its source manuscript after excluding the cover page. Every page passed checks for:
 
 - exact story text and paragraph sequence
 - italic runs
@@ -22,6 +22,9 @@ The current local batch contains twelve reading pages. The importer compared eac
 | Kool-Aid | 189 | 1 | 0 | Pass |
 | The Road to Hell | 93 | 7 | 0 | Pass |
 | Comparing Notes | 37 | 5 | 0 | Pass |
+| Ella Mar | 5 | 5 | 0 | Pass |
+| Blanden, I | 50 | 3 | 0 | Pass |
+| Fast Food Fish Fatale | 146 | 11 | 0 | Pass |
 
 ## Notes
 
@@ -31,3 +34,9 @@ The current local batch contains twelve reading pages. The importer compared eac
 - `Comparing Notes` was imported on October 1, 2026 from Jason’s supplied DOCX, under its published title. Its cover-page contact details and rights information were excluded. Jason approved publication of the page on October 1, 2026.
 - No manuscript was located for `I Let Him Fuck You`, so it does not have a local reading page yet.
 
+
+- `Ella Mar` imported locally from Jason’s supplied `One Hundred Voices Edit` manuscript on October 1, 2026, and linked under the corrected anthology title, `100 Voices`. The existing bibliography year, 2016, is retained; it has not been independently reverified. Jason approved publication on October 1, 2026.
+
+- `Blanden, I` imported locally on October 1, 2026 from Jason’s supplied DOCX. Cover-page contact and rights information excluded. Linked from `Good Works Review 2018`, using the existing bibliography publication date of 2019. Jason approved publication on October 1, 2026.
+
+- `Fast Food Fish Fatale` imported locally on October 1, 2026 from the supplied `Edit 1` DOCX. Preserved the Eliot epigraph and attribution; excluded cover-page contact and rights information. Automatic comparison passed. Jason approved publication on October 1, 2026.
