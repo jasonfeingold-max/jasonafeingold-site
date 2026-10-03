@@ -44,7 +44,7 @@ def render_runs(paragraph) -> str:
     return "".join(parts).strip()
 
 
-def manuscript_segments(docx_path: Path, title: str):
+def manuscript_segments(docx_path: Path, title: str, end_before=None, skip_byline=None):
     document = Document(docx_path)
     title_index = next(
         index
@@ -56,6 +56,10 @@ def manuscript_segments(docx_path: Path, title: str):
     italics: list[str] = []
     for paragraph in document.paragraphs[title_index + 1 :]:
         plain = normalize(paragraph.text)
+        if end_before and plain == normalize(end_before):
+            break
+        if skip_byline and plain == normalize(skip_byline):
+            continue
         if not plain:
             continue
         if is_scene_break(plain):
@@ -66,7 +70,7 @@ def manuscript_segments(docx_path: Path, title: str):
     return segments, italics
 
 
-def manuscript_body(docx_path: Path, title: str) -> str:
+def manuscript_body(docx_path: Path, title: str, end_before=None, skip_byline=None) -> str:
     document = Document(docx_path)
     title_index = next(
         index
@@ -77,6 +81,10 @@ def manuscript_body(docx_path: Path, title: str) -> str:
     body: list[str] = []
     for paragraph in document.paragraphs[title_index + 1 :]:
         plain = normalize(paragraph.text)
+        if end_before and plain == normalize(end_before):
+            break
+        if skip_byline and plain == normalize(skip_byline):
+            continue
         if not plain:
             continue
         if is_scene_break(plain):
@@ -138,8 +146,8 @@ class StoryBodyParser(HTMLParser):
             self.italic_parts.append(data)
 
 
-def verify_import(docx_path: Path, title: str, page: str) -> dict[str, object]:
-    source_segments, source_italics = manuscript_segments(docx_path, title)
+def verify_import(docx_path: Path, title: str, page: str, end_before=None, skip_byline=None) -> dict[str, object]:
+    source_segments, source_italics = manuscript_segments(docx_path, title, end_before, skip_byline)
     parser = StoryBodyParser()
     parser.feed(page)
     source_breaks = sum(kind == "break" for kind, _ in source_segments)
@@ -164,18 +172,26 @@ def verify_import(docx_path: Path, title: str, page: str) -> dict[str, object]:
 
 def build_page(args) -> str:
     source_title = args.source_title or args.title
-    body = manuscript_body(Path(args.input), source_title)
+    body = manuscript_body(Path(args.input), source_title, getattr(args, "end_before", None), getattr(args, "skip_byline", None))
     title = html.escape(args.title)
     site_author = html.escape(args.site_author)
     byline = html.escape(args.byline or args.site_author)
-    publication = html.escape(args.publication)
-    year = html.escape(args.year)
+    publication = html.escape(args.publication or "")
+    year = html.escape(args.year or "")
     original_link = ""
     if args.archive:
         archive = html.escape(args.archive, quote=True)
         original_link = (
             f' <a href="{archive}" target="_blank" rel="noopener">'
             f'{html.escape(args.archive_label)} <span aria-hidden="true">↗</span></a>'
+        )
+
+    publication_credit = ""
+    if publication:
+        date_credit = f" in {year}" if year else ""
+        publication_credit = (
+            f'          <p class="story-publication">Originally published by '
+            f'<cite>{publication}</cite>{date_credit}.{original_link}</p>\n'
         )
 
     return f'''<!doctype html>
@@ -207,9 +223,7 @@ def build_page(args) -> str:
           <p class="eyebrow">Short fiction</p>
           <h1>{title}</h1>
           <p class="story-byline">By {byline}</p>
-          <p class="story-publication">
-            Originally published by <cite>{publication}</cite> in {year}.{original_link}
-          </p>
+{publication_credit.rstrip()}
         </header>
 
         <div class="story-body">
@@ -242,10 +256,12 @@ def main() -> None:
     parser.add_argument("output")
     parser.add_argument("--title", required=True)
     parser.add_argument("--source-title")
+    parser.add_argument("--end-before")
+    parser.add_argument("--skip-byline")
     parser.add_argument("--site-author", default="Jason A. Feingold")
     parser.add_argument("--byline")
-    parser.add_argument("--publication", required=True)
-    parser.add_argument("--year", required=True)
+    parser.add_argument("--publication")
+    parser.add_argument("--year")
     parser.add_argument("--archive")
     parser.add_argument("--archive-label", default="View the original archive")
     parser.add_argument("--story-number", default="17")
@@ -256,7 +272,7 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     page = build_page(args)
     output.write_text(page, encoding="utf-8")
-    report = verify_import(Path(args.input), args.source_title or args.title, page)
+    report = verify_import(Path(args.input), args.source_title or args.title, page, args.end_before, args.skip_byline)
     report.update({"title": args.title, "source": str(Path(args.input)), "output": str(output)})
     if args.report:
         Path(args.report).write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

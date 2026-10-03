@@ -27,7 +27,7 @@ This is Jason A. Feingold's author website. It presents his fiction, bibliograph
 - Bibliography includes Jason A. Feingold and Simon Easton sections.
 - Eleven story pages were published with the bibliography after Jason approved publication.
 - `Comparing Notes` has now been imported and linked locally as a twelfth reading page; Jason approved publication of this addition on October 1, 2026.
-- All fifteen imported story pages pass the automatic comparison. See `STORY_IMPORT_REPORT.md`.
+- All twenty imported story pages pass the automatic comparison. See `STORY_IMPORT_REPORT.md`.
 - The initial eleven-page batch is live; subsequent additions remain local until approved.
 
 ## Pre-launch decisions still needed
@@ -48,3 +48,15 @@ This is Jason A. Feingold's author website. It presents his fiction, bibliograph
 - `Blanden, I` imported, verified, and linked locally from `Good Works Review 2018`. Jason approved publication on October 1, 2026.
 
 - `Fast Food Fish Fatale` imported and verified locally from the supplied `Edit 1` manuscript; bibliography now links to the local reading page. Jason approved publication on October 1, 2026.
+
+## October 1 import queue update
+
+Jason requested removing Mr. Strahler’s Golden Years and Was It Love? from the missing-story list. Imported Handcuffs, Textherazade, The Magic Cigarette, and Irene’s Last Willful Testament locally, with source comparisons passing. Linked in More stories without unverified publication credits. The prior fifteen reading pages are published; these four new pages await explicit publication approval.
+
+## October 2 corrected transcription
+
+I Let Him Fuck You imported locally from the corrected DOCX and linked from its existing bibliography entry. Source comparison passed. Five new pages now await publication: Handcuffs, Textherazade, The Magic Cigarette, Irene’s Last Willful Testament, and I Let Him Fuck You.
+
+## October 2 publication approval
+
+Jason explicitly approved taking all five additions live: Handcuffs, Textherazade, The Magic Cigarette, Irene’s Last Willful Testament, and I Let Him Fuck You. This supersedes the pending-approval status above.
