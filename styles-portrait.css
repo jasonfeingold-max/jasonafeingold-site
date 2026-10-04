@@ -685,3 +685,9 @@ footer p {
     scroll-behavior: auto;
   }
 }
+
+/* Accommodate the Read My Work link in the existing navigation. */
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; gap: 20px; padding-block: 20px; }
+  .site-header nav { flex-wrap: wrap; gap: 14px 20px; width: 100%; }
+}

@@ -68,3 +68,7 @@ Added a Contact the Author page and linked it from the homepage and all story pa
 ## October 3 author portrait
 
 Jason supplied a portrait for the About section. Added it with responsive sizing and descriptive alternative text. Jason approved publication on October 3, 2026; published to the live site.
+
+## October 4 Blue excerpt
+
+Added Read My Work and the opening Blue excerpt from Blue Final Copy.docx. Verified 18 paragraphs, 6 italic runs, and zero scene breaks against the manuscript. The excerpt ends at the requested sentence “She won. She always wins.” within the manuscript's final included paragraph; no new paragraph boundaries were introduced. Content note added outside the excerpt. Primary navigation updated throughout. Jason approved publication on October 4, 2026. Publication authorized for Read My Work, the Blue excerpt, and associated navigation updates.
