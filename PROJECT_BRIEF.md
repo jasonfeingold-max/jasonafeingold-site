@@ -60,3 +60,7 @@ I Let Him Fuck You imported locally from the corrected DOCX and linked from its 
 ## October 2 publication approval
 
 Jason explicitly approved taking all five additions live: Handcuffs, Textherazade, The Magic Cigarette, Irene’s Last Willful Testament, and I Let Him Fuck You. This supersedes the pending-approval status above.
+
+## October 3 contact page
+
+Added a Contact the Author page and linked it from the homepage and all story pages. Jason supplied an obfuscated display for the public email address and explicitly approved publication on October 3, 2026. Published to the live site.

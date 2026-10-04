@@ -166,7 +166,8 @@ h1 .surname {
 
 .work-section,
 .bibliography-section,
-.about-section {
+.about-section,
+.contact-main {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 64px;
@@ -310,6 +311,58 @@ h2 {
 .about-copy {
   display: grid;
   gap: 34px;
+}
+
+.contact-main {
+  min-height: calc(100vh - 242px);
+  grid-template-columns: 200px 1fr;
+  gap: 64px;
+  padding-block: 96px;
+}
+
+.contact-page {
+  grid-column: 2;
+  max-width: 760px;
+}
+
+.contact-masthead {
+  margin-bottom: 52px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.contact-masthead h1 {
+  margin: 18px 0 24px;
+  font-family: var(--display);
+  font-size: clamp(3.2rem, 7vw, 5.8rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.contact-masthead .story-byline {
+  max-width: 40rem;
+}
+
+.contact-details {
+  min-height: 120px;
+  font-family: var(--display);
+  font-size: 1.25rem;
+}
+
+.contact-prompt {
+  color: var(--muted);
+}
+
+.obfuscated-email {
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.obfuscated-token {
+  white-space: nowrap;
 }
 
 .about-copy h2 {
@@ -477,6 +530,16 @@ footer p {
     padding-block: 72px;
   }
 
+  .contact-main {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-block: 72px;
+  }
+
+  .contact-page {
+    grid-column: 1;
+  }
+
   .section-label {
     max-width: 200px;
   }
@@ -546,6 +609,10 @@ footer p {
   }
 
   .story-main {
+    width: min(100% - 32px, 680px);
+  }
+
+  .contact-main {
     width: min(100% - 32px, 680px);
   }
 
