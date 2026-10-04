@@ -64,3 +64,7 @@ Jason explicitly approved taking all five additions live: Handcuffs, Textherazad
 ## October 3 contact page
 
 Added a Contact the Author page and linked it from the homepage and all story pages. Jason supplied an obfuscated display for the public email address and explicitly approved publication on October 3, 2026. Published to the live site.
+
+## October 3 author portrait
+
+Jason supplied a portrait for the About section. Added it with responsive sizing and descriptive alternative text. Jason approved publication on October 3, 2026; published to the live site.

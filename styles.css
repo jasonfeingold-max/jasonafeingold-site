@@ -313,6 +313,32 @@ h2 {
   gap: 34px;
 }
 
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.75fr);
+  grid-template-areas: "copy portrait";
+  align-items: start;
+  gap: clamp(32px, 5vw, 68px);
+}
+
+.about-copy {
+  grid-area: copy;
+}
+
+.author-portrait {
+  grid-area: portrait;
+  width: min(100%, 340px);
+  margin: 12px auto 0;
+}
+
+.author-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  box-shadow: 0 20px 38px rgb(23 33 39 / 0.12);
+}
+
 .contact-main {
   min-height: calc(100vh - 242px);
   grid-template-columns: 200px 1fr;
@@ -530,6 +556,11 @@ footer p {
     padding-block: 72px;
   }
 
+  .about-content {
+    grid-template-columns: minmax(0, 1.25fr) minmax(210px, 0.75fr);
+    gap: 32px;
+  }
+
   .contact-main {
     grid-template-columns: 1fr;
     gap: 0;
@@ -594,6 +625,20 @@ footer p {
 
   .pen-name-heading p {
     margin-bottom: 22px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "portrait"
+      "copy";
+    gap: 30px;
+  }
+
+  .author-portrait {
+    width: min(100%, 320px);
+    margin: 0;
+    justify-self: center;
   }
 
   .typewriter-form {
