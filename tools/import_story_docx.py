@@ -202,6 +202,7 @@ def build_page(args) -> str:
     <meta name="description" content="{title}, a short story by {byline}." />
     <title>{title} | {site_author}</title>
     <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../assets/website-analytics.js"></script>
   </head>
   <body>
     <header class="site-header story-site-header">

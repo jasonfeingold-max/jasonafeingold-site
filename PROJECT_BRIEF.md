@@ -84,3 +84,7 @@ At Jason’s request, repeated the three verified social profile links beneath t
 ## October 4 Conscience and Cowards excerpt
 
 Jason explicitly requested preparing and publishing excerpts to the website, Facebook Page and personal feed, Instagram, and Bluesky. Added the opening through “Nice to see you too,” Paul said. from the supplied Final Draft manuscript, using the existing reading-page design. Verified 132 nonempty manuscript paragraphs and 7 italic runs against the source. Original episode and viewpoint headings retained. Added a content note and an entry under Read My Work. Added a quote-card asset for authorized social publication.
+
+## October 4 website analytics
+
+Jason requested awareness of website readership after discussion of setting up tracking. Added Metricool visitor tracking to all 25 pages and the story import template. The shared loader only runs on jasonafeingold.com and www.jasonafeingold.com so local previews are not counted. Tracking starts at installation; earlier traffic cannot be reconstructed from Metricool.
