@@ -72,3 +72,7 @@ Jason supplied a portrait for the About section. Added it with responsive sizing
 ## October 4 Blue excerpt
 
 Added Read My Work and the opening Blue excerpt from Blue Final Copy.docx. Verified 18 paragraphs, 6 italic runs, and zero scene breaks against the manuscript. The excerpt ends at the requested sentence “She won. She always wins.” within the manuscript's final included paragraph; no new paragraph boundaries were introduced. Content note added outside the excerpt. Primary navigation updated throughout. Jason approved publication on October 4, 2026. Publication authorized for Read My Work, the Blue excerpt, and associated navigation updates.
+
+## October 4 social follow links
+
+Added a shared “Follow me on” footer area to all 24 public pages, linking to the Jason A. Feingold Facebook Page, @jasonfeingold on Instagram, and @jasonfeingold.bsky.social on Bluesky. Profiles confirmed through Metricool and the published Facebook post URL. Jason approved the social links on October 4, conditional on working destinations, and requested links at the bottom of every category. Added them to Selected Work, Bibliography, and About; retained footer links on the other pages.
