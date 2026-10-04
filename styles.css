@@ -742,3 +742,17 @@ footer {
 @media (max-width: 800px) {
   .section-follow { grid-column: 1; }
 }
+
+.hero-follow {
+  margin-top: 32px;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.hero-follow > p { margin: 0; }
+
+.hero-copy { min-width: 0; }
+.hero-follow { width: 100%; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+}

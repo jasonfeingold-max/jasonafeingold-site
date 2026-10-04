@@ -76,3 +76,7 @@ Added Read My Work and the opening Blue excerpt from Blue Final Copy.docx. Verif
 ## October 4 social follow links
 
 Added a shared “Follow me on” footer area to all 24 public pages, linking to the Jason A. Feingold Facebook Page, @jasonfeingold on Instagram, and @jasonfeingold.bsky.social on Bluesky. Profiles confirmed through Metricool and the published Facebook post URL. Jason approved the social links on October 4, conditional on working destinations, and requested links at the bottom of every category. Added them to Selected Work, Bibliography, and About; retained footer links on the other pages.
+
+## October 4 homepage follow links
+
+At Jason’s request, repeated the three verified social profile links beneath the homepage name/introduction and above the lower dividing line, preserving the section and footer links.
