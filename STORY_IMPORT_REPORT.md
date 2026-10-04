@@ -63,3 +63,7 @@ Jason explicitly approved taking all five additions live: Handcuffs, Textherazad
 ## October 4 Blue excerpt
 
 Added Read My Work and the opening Blue excerpt from Blue Final Copy.docx. Verified 18 paragraphs, 6 italic runs, and zero scene breaks against the manuscript. The excerpt ends at the requested sentence “She won. She always wins.” within the manuscript's final included paragraph; no new paragraph boundaries were introduced. Content note added outside the excerpt. Primary navigation updated throughout. Jason approved publication on October 4, 2026. Publication authorized for Read My Work, the Blue excerpt, and associated navigation updates.
+
+## October 4 Conscience and Cowards excerpt
+
+Jason explicitly requested preparing and publishing excerpts to the website, Facebook Page and personal feed, Instagram, and Bluesky. Added the opening through “Nice to see you too,” Paul said. from the supplied Final Draft manuscript, using the existing reading-page design. Verified 132 nonempty manuscript paragraphs and 7 italic runs against the source. Original episode and viewpoint headings retained. Added a content note and an entry under Read My Work. Added a quote-card asset for authorized social publication.

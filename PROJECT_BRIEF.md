@@ -80,3 +80,7 @@ Added a shared “Follow me on” footer area to all 24 public pages, linking to
 ## October 4 homepage follow links
 
 At Jason’s request, repeated the three verified social profile links beneath the homepage name/introduction and above the lower dividing line, preserving the section and footer links.
+
+## October 4 Conscience and Cowards excerpt
+
+Jason explicitly requested preparing and publishing excerpts to the website, Facebook Page and personal feed, Instagram, and Bluesky. Added the opening through “Nice to see you too,” Paul said. from the supplied Final Draft manuscript, using the existing reading-page design. Verified 132 nonempty manuscript paragraphs and 7 italic runs against the source. Original episode and viewpoint headings retained. Added a content note and an entry under Read My Work. Added a quote-card asset for authorized social publication.
