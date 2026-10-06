@@ -11,6 +11,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 from docx import Document
+from share_footer import share_footer
 
 
 SCENE_BREAK = "***"
@@ -203,6 +204,8 @@ def build_page(args) -> str:
     <title>{title} | {site_author}</title>
     <link rel="stylesheet" href="../styles.css" />
     <script defer src="../assets/website-analytics.js"></script>
+    <link rel="stylesheet" href="../assets/reading-share.css" />
+    <script defer src="../assets/reading-share.js"></script>
   </head>
   <body>
     <header class="site-header story-site-header">
@@ -231,6 +234,7 @@ def build_page(args) -> str:
 {body}
         </div>
 
+{share_footer(args.title, "stories/" + Path(args.output).name)}
         <div class="story-end">
           <span aria-hidden="true">№ {html.escape(args.story_number)}</span>
           <a class="text-link" href="../index.html#bibliography">Return to bibliography <span aria-hidden="true">←</span></a>
