@@ -13,7 +13,7 @@ def share_footer(title, relative_path):
           <div class="reading-share-controls">
             <a href="https://www.facebook.com/sharer/sharer.php?u={encoded_url}" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook (opens in a new tab)">Facebook</a>
             <a href="https://bsky.app/intent/compose?text={text}" target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky (opens in a new tab)">Bluesky</a>
-            <a href="mailto:?subject={subject}&amp;body={text}" aria-label="Share by email">Email</a>
+            <!--email_off--><a href="mailto:?subject={subject}&amp;body={text}" aria-label="Share by email">Email</a><!--/email_off-->
             <button type="button" data-copy-link hidden>Copy link</button>
             <button type="button" data-native-share hidden>Share…</button>
           </div>
